@@ -60,7 +60,7 @@ public class MainCanodromo {
                     public void actionPerformed(ActionEvent e) {
 						try{
 							galgos.wait();
-						}catch(Exception e){
+						}catch(Exception k){
 							
 						}
                         System.out.println("Carrera pausada!");
@@ -74,7 +74,7 @@ public class MainCanodromo {
                     public void actionPerformed(ActionEvent e) {
 						try{
 							galgos.notify();
-						}catch(Exception e){
+						}catch(Exception k){
 							
 						}
                         System.out.println("Carrera reanudada!");
