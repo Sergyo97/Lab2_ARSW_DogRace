@@ -1,4 +1,4 @@
-# # Dogs Race Case Laboratory
+# Dogs Race Case Laboratory
 Este laboratorio está diseñado para que el estudiante conozca y aplique conceptos acerca de programación concurrente.
 
 ## Running
