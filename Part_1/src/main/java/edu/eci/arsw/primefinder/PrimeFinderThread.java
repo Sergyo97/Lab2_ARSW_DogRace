@@ -20,13 +20,13 @@ public class PrimeFinderThread extends Thread{
 
 	public void run(){
 		for (int i=a;i<=b;i++){			
-			synchronized (ControlThread.obj) {
+			/*synchronized (ControlThread.obj) {
 				try {
 					wait();
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
-			}
+			}*/
 			if (isPrime(i)){
 				primes.add(i);
 				//System.out.println(i);

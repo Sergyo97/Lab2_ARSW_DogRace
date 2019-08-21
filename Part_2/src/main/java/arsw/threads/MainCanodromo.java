@@ -60,7 +60,7 @@ public class MainCanodromo {
                     public void actionPerformed(ActionEvent e) {
 						for (int i = 0; i < can.getNumCarriles(); i++) {
                             try{ 
-                                galgos[i].suspend();
+                                //galgos[i].suspend();
                             }catch(Exception k){
                                 
                             }
@@ -76,7 +76,7 @@ public class MainCanodromo {
                     public void actionPerformed(ActionEvent e) {
 						for (int i = 0; i < can.getNumCarriles(); i++) {
                             try{ 
-                                galgos[i].resume();
+                                //galgos[i].resume();
                             }catch(Exception k){
                                 
                             }

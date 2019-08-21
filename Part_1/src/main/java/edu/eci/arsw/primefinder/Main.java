@@ -13,9 +13,13 @@ public class Main {
 		thList.add(new PrimeFinderThread(0, 10000000));
 		thList.add(new PrimeFinderThread(10000000, 20000000));
 		thList.add(new PrimeFinderThread(20000000, 30000000));
-		ControlThread ct=new ControlThread(thList);
-		ct.start();
-
+		for(PrimeFinderThread p:thList)p.start();
+		try {
+			for(PrimeFinderThread p:thList)p.join();	
+		} catch (Exception e) {
+			//TODO: handle exception
+		}
+		
 	}
 	
 	public static Object getObj() {
