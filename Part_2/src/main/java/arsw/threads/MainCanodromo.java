@@ -58,11 +58,13 @@ public class MainCanodromo {
                 new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-						try{
-							galgos.wait();
-						}catch(Exception k){
-							
-						}
+						for (int i = 0; i < can.getNumCarriles(); i++) {
+                            try{ 
+                                galgos[i].suspend();
+                            }catch(Exception k){
+                                
+                            }
+                        }
                         System.out.println("Carrera pausada!");
                     }
                 }
@@ -72,11 +74,13 @@ public class MainCanodromo {
                 new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-						try{
-							galgos.notify();
-						}catch(Exception k){
-							
-						}
+						for (int i = 0; i < can.getNumCarriles(); i++) {
+                            try{ 
+                                galgos[i].resume();
+                            }catch(Exception k){
+                                
+                            }
+                        }
                         System.out.println("Carrera reanudada!");
                     }
                 }
